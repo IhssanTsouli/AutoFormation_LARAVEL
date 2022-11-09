@@ -1,6 +1,8 @@
 <?php
-
+use App\Http\Controllers\PromoController;
 use Illuminate\Support\Facades\Route;
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +18,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+// Route::get('/test',[PromotionsController::class,'hasOne']);
+route::get('/aa',[PromoController::class,'hasOne']);
+
+Route::get('/bb',[PromoController::class,'hasMany']);
+ // many to many
+ Route::get('/cc',[PromoController::class,'ManyToMany']);
+
+

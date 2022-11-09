@@ -1,17 +1,12 @@
 <?php
 
 namespace App\Models;
-use App\Models\Detail;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Post extends Model
+class apprenant_promotion extends Model
 {
     use HasFactory;
-
-    public function detail():HasOne
-    {
-        return $this->hasOne(Detail::class);
-    }
+    protected $table='apprenant_promotions';
 }
